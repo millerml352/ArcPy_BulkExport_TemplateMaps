@@ -6,8 +6,8 @@ NSLICS maps are made for use by U.S.A.C.E. MVS as part of contract work, sensiti
 - While a lovely piece of software, ArcPro isn't exactly the picture of speed. Running through a Citrix instance it can take several minutes to open a project, export once to JPG, export again to PDF, then navigate to the next project and repeat. A lot of time spent looking at loading circles and pulling hair when you want to be done with the review process.
 
 ### Time Savings
-- Using this script which runs fully in the background, time to export 40 APRXs into 80 maps is **15 +/- 1 minutes.**
-- Traditional workflow to open each project and manually export from Pro conservative estimate of approximately 5 min/project * 40 projects = 200 min / 60 min = **3.333 hours**
+- Using this script which runs fully in the background, time to export 80 APRXs into 80 maps is **26 +/- 1 minutes.**
+- Traditional workflow to open each project and manually export from Pro conservative estimate of approximately 5 min/project * 80 projects = 400 min / 60 min = **6.667 hours** pretty much an entire day holy cow millerml352 what a subtle but significant savings!
 
 ### GIS Technician Brain Savings
 - priceless

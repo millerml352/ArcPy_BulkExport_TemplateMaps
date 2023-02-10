@@ -9,9 +9,9 @@ import tkinter.ttk as ttk
 from datetime import datetime
 
 # Project Files (.APRXs)
-folderPath = r'\\bi-az-gis\GIS\GIS\KBCRS\MXD'
+folderPath = r''
 # Map Exports
-outputfolder = r'\\bi-az-gis\GIS\GIS\KBCRS\MapExports\Phase2\Group3\SPD\CTT\MMiller\test'
+outputfolder = r''
 # Globals
 selectedFiles=[]
 outputLocation=''

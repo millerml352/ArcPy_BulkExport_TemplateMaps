@@ -12,6 +12,5 @@ NSLICS maps are made for use by U.S.A.C.E. MVS as part of contract work, sensiti
 ### GIS Technician Brain Savings
 - priceless
 
-### To-do list
-Want to make things even simpler so no code editing required on part of technician making maps
-- add simple file explorer gui to select which files export is desired for; bonus of being able to only export subset if full export is not needed
+### Notes
+2/10/23- first expanded on procedural script, run and it asks you to choose APRXs, then export directory, then automatically begins exporting and ends. created a full GUI with tkinter, reorganized to more object oriented/class structured program. GUI has buttons to choose files, select output directory, export, and determinate progress bar on bottom using counter as fraction of total files selected to determine % complete. Honestly pretty stoked about creating something like this where you can go back and forth in the options, select and change your selection before running. added error handlers to ensure it does not try to run and terminate if no files or export directory have been selected. on the verge of overkill for the current application purposes

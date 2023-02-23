@@ -1,5 +1,5 @@
-# NSLICS BULK EXPORT TOOL
-# ARCGIS PRO 3.0.3 2/9/2023
+# SG Map APRX Export Tool
+# ARCGIS PRO 3.0.3 2/23/2023
 # MMILLER@BRISTOL-COMPANIES.COM
 
 import arcpy, os, threading
@@ -9,9 +9,9 @@ import tkinter.ttk as ttk
 from datetime import datetime
 
 # Project Files (.APRXs) default dir
-folderPath = r'\\bi-az-gis\GIS\GIS\KBCRS\MXD'
+folderPath = r'\\bi-az-gis\GIS\GIS'
 # Map Exports default dir
-outputfolder = r'\\bi-az-gis\GIS\GIS\KBCRS\MapExports'
+outputfolder = r'\\bi-az-gis\GIS\GIS'
 # Globals
 selectedFiles=[]
 outputLocation=''
@@ -20,7 +20,7 @@ class userInterface:
 
     def __init__(self):
         root = Tk()  # create root window
-        root.title('NSLICS Export Tool')  # title of the GUI window
+        root.title('SG Map Export Tool')  # title of the GUI window
         root.minsize(295, 410)
         root.maxsize(295, 410)  # constrain window size, does not resize automatically
         root.config(bg='skyblue')  # specify background color
@@ -32,7 +32,7 @@ class userInterface:
         progressFrame.grid(row=1, column=0, padx=5, pady=5)
 
         # Create frames and labels
-        Label(buttonFrame, text='NSLICS Map Export Tool').grid(row=0, column=0, padx=5, pady=5)
+        Label(buttonFrame, text='SG Map Export Tool').grid(row=0, column=0, padx=5, pady=5)
         Label(progressFrame, text='Progress Bar').grid(row=0, column=0, padx=5, pady=5)
         
         
@@ -85,10 +85,10 @@ class userInterface:
                     basename_split = basename.replace('/','\\').split('\\')
                     fileprefix = basename_split[-1]
                     maptype = ''
-                    if 'INSTAL' in fileprefix:
-                        maptype = 'INSTAL 1'
-                    elif 'CTT' in fileprefix:
-                        maptype = 'CTT'
+                    if 'Cover' in fileprefix:
+                        maptype = 'Layout 1'
+                    elif 'Inside' in fileprefix:
+                        maptype = 'Layout 2'
                     else:
                         pass
                     # Ignore anything that isn't an .aprx in directory

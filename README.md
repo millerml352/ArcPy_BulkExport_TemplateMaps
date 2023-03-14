@@ -1,5 +1,5 @@
 # ArcPy_BulkExport_NSLICS
-NSLICS maps are made for use by U.S.A.C.E. MVS as part of contract work, sensitive info redacted. This script simply automates exporting of maps from ArcGIS Pro 3.0.3 APRX project files.
+This script simply automates exporting of particular map formats for me using ArcGIS Pro 3.0.4 APRX project files, python 3.9.11
 ### Why
 - Each of these maps goes through several rounds of editing and review, requiring very minute changes, meaning a new export needs to be produced (JPEG and PDF) each time an edit is needed, and then at final stage for submittal.
 

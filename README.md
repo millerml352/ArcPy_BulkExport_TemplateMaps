@@ -18,3 +18,5 @@ NSLICS maps are made for use by U.S.A.C.E. MVS as part of contract work, sensiti
 2/23/23 - disabled buttons from being able to be pressed while export thread is running because it overwrites global var. Some very minor layer issues, speed increases even more when running through citrix instance counter to my expectations. Worked well for several other technicians, only one has had issues with layers displaying in PDF format. 
 
 3/14/23 - uploaded full gui version, abstracted output away from python shell into text element (incongruously named listbox because that was my first attempt). follow up will involve cleaning up that script now that its functional, validating map type selection (at the moment its more of a placebo), maybe trying some binding and reformatting things to be cleaner or dryer
+
+p.s. also thinking about a more general layout exporter - load any project in, pick the layout and settings you want out. these all work based on the projects sticking to the templates they should be. if people go off piste theres room for error
